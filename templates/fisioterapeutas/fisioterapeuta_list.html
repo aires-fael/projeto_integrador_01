@@ -1,0 +1,57 @@
+{% extends "accounts/index.html" %}
+
+{% block title %}
+    Fisioterapeutas
+{% endblock %}
+
+{% block accounts_container %}
+<h2>Fisioterapeutas</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                E-mail
+            </th>
+            <th>
+                CREFITO
+            </th>
+            <th>
+                Especialidade
+            </th>
+            <th>
+                Telefone
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for fisioterapeuta in object_list %}
+        <tr>
+            <td>
+                <a href=""># {{ fisioterapeuta.pk }}</a>
+            </td>
+            <td>
+                {{ fisioterapeuta.nome }}
+            </td>
+            <td>
+                {{ fisioterapeuta.email }}
+            </td>
+            <td>
+                {{ fisioterapeuta.crefito }}
+            </td>
+            <td>
+                {{ fisioterapeuta.especialidade }}
+            </td>
+            <td>
+                {{ fisioterapeuta.telefone }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
