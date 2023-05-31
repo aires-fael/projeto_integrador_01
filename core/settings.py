@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-%=5r)k$(m&4sz#ycvf9*wvb_6q%hpbkg(bczdlq)gy-5j5sz4m
 
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['projeto-integrador-01.herokuapp.com]
 
 
 
