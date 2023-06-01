@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import django_on_heroku
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -128,3 +129,6 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'accounts.backends.ModelBackend'
 )
+
+
+django_on_heroku.settings(locals())
